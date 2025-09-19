@@ -117,7 +117,7 @@ Displays system logs in real-time for occlusion, reacquisition, and ID tracking 
 </p>
 
 Before running ReID, users can preview their uploaded video.
-In the GIF example below, the system is simply showing the uploaded video while allowing you to adjust parameters in the configuration sidebar.
+In the GIF example above, the system is simply showing the uploaded video while allowing you to adjust parameters in the configuration sidebar.
 
 > ***Note***: Once you press Play, the parameters become locked. This is due to Streamlit’s event loop: each frame is processed in a continuous loop, which prevents changes from being applied mid-run. If parameters were modified while the loop was active, Streamlit would either throw an error or restart the process.
 
@@ -240,3 +240,4 @@ If you use this demo in your research, please consider citing this repository an
 }
 
 ```
+

@@ -210,7 +210,7 @@ This project builds on the amazing work of several open-source communities and r
 If you use this demo in your research, please consider citing this repository and the original works that made it possible
 ```
 @misc{trident2025,
-  author       = {Your Name},
+  author       = {Rejey Gammad},
   title        = {TRIDENT AI Vision System: A Demo of YOLOv8 + OSNet for Person Re-Identification},
   year         = {2025},
   publisher    = {GitHub},
@@ -238,4 +238,5 @@ If you use this demo in your research, please consider citing this repository an
   year    = {2019},
   url     = {https://streamlit.io/}
 }
+
 ```

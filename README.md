@@ -1,6 +1,6 @@
 # TRIDENT AI Vision System
 
-***A demo pipeline that combines YOLOv8 detection and OSNet person re-identification, wrapped in a sleek Streamlit web app. Instead of staring at benchmark scores like mAP or CMC, you can upload your own videos and see how re-ID works in action, frame by frame, ID by ID.***
+***A demo pipeline that combines YOLOv8 detection and OSNet person re-identification, wrapped in a sleek Streamlit web app. Instead of staring at benchmark scores like mAP or CMC, you can upload your own videos and see how re-ID works in action, frame by frame, ID by ID. This Streamlit tool demonstrates a simplified version of a larger CV system I contributed to in a professional R&D capacity, with custom tracking and partial metric support. This version is built from scratch for public demonstration purposes.***
 
 <p align="center">
 <img src="src/data/gifs/demo_reid.gif" width="80%"/>
@@ -65,6 +65,17 @@ trident-reid-demo/
 Most re-ID papers flex numbers like 99% accuracy. But here’s the catch:
 
 >- If the system mislabels 10 frames in a 1,500-frame video, that’s just a 0.66% error rate. On paper, that’s 99.4% accuracy. To a human watching the video, it looks like the system “broke” the moment it shows a wrong ID. This demo exists to bridge that gap, so you can experience both the strengths and the imperfections of real-world re-ID.
+
+>- > 🛠️ Built entirely from scratch for public demonstration purposes.  
+> 🧠 Features include async I/O, YOLO-based detection, re-ID pipelines, and preview of a memory-efficient occlusion tracking system.
+
+---
+
+This repo represents the cleanroom version of techniques I've used in advanced object detection pipelines, including:
+- Async video frame ingestion (imageio/threaded)
+- Real-time detection and tracking visualization
+- Lightweight Streamlit frontend for demo/testing
+- Hooks for future integration of novel metrics (occlusion, temporal confidence, correction tracking)
 
 ## Features
 
@@ -240,4 +251,5 @@ If you use this demo in your research, please consider citing this repository an
 }
 
 ```
+
 
